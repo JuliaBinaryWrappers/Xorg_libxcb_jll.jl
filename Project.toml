@@ -1,6 +1,6 @@
 name = "Xorg_libxcb_jll"
 uuid = "c7cfdc94-dc32-55de-ac96-5a1b8d977c5b"
-version = "1.15.0+0"
+version = "1.17.0+0"
 
 [deps]
 JLLWrappers = "692b3bcd-3c85-4b1f-b108-f13ce0eb3210"
@@ -14,3 +14,5 @@ Xorg_libXdmcp_jll = "a3789734-cfe1-5b06-b2d0-1dd0d9d62d05"
 [compat]
 JLLWrappers = "1.2.0"
 julia = "1.6"
+Libdl = "1"
+Artifacts = "1"
