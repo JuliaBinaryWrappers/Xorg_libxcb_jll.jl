@@ -3,7 +3,6 @@ export libxcb, libxcb_composite, libxcb_damage, libxcb_dpms, libxcb_dri2, libxcb
 
 using Xorg_libXau_jll
 using Xorg_libXdmcp_jll
-using Xorg_libpthread_stubs_jll
 JLLWrappers.@generate_wrapper_header("Xorg_libxcb")
 JLLWrappers.@declare_library_product(libxcb, "libxcb.so.1")
 JLLWrappers.@declare_library_product(libxcb_composite, "libxcb-composite.so.0")
@@ -30,7 +29,7 @@ JLLWrappers.@declare_library_product(libxcb_xtest, "libxcb-xtest.so.0")
 JLLWrappers.@declare_library_product(libxcb_xv, "libxcb-xv.so.0")
 JLLWrappers.@declare_library_product(libxcb_xvmc, "libxcb-xvmc.so.0")
 function __init__()
-    JLLWrappers.@generate_init_header(Xorg_libXau_jll, Xorg_libXdmcp_jll, Xorg_libpthread_stubs_jll)
+    JLLWrappers.@generate_init_header(Xorg_libXau_jll, Xorg_libXdmcp_jll)
     JLLWrappers.@init_library_product(
         libxcb,
         "lib/libxcb.so",
